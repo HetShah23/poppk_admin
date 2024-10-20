@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../Components/Layout/Layout';
 import AddIco from "../Components/Images/plus-add-ico.svg";
-import Datatable from '../Components/Datatable/Datatable';
+import BlogImage from "../Components/Images/blog-image.svg";
 import { Link } from 'react-router-dom';
 
 export default function Blogs() {
@@ -12,17 +12,14 @@ export default function Blogs() {
                     <div className="row">
                         <div className="col-12 mt-3">
                             <div className="bx-white-main">
-                                <div className="d-flex align-items-center">
-                                    <h2 className="mb-0">Blogs</h2>
-                                    <div className="ms-auto">
-                                        <Link to="/" className="btn-all-comn">
-                                            <img src={AddIco} className="me-2" loading="lazy" alt="" />
-                                            Add Blogs
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="pt-2 mt-1">
-                                    <Datatable />
+                                <h2 className="mb-0">Blogs</h2>
+                                <div className="text-center blog-section-info">
+                                    <img src={BlogImage} loading="lazy" alt="" />
+                                    <p>No blogs available. Click 'Add' to add a new blog.</p>
+                                    <Link to="/" className="btn-all-comn">
+                                        <img src={AddIco} className="me-2" loading="lazy" alt="" />
+                                        Add Blogs
+                                    </Link>
                                 </div>
                             </div>
                         </div>

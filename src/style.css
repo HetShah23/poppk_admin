@@ -79,6 +79,12 @@ button:focus {
     font-size: 13px;
 }
 
+#root{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .login-div-scrollpart {
     height: 100vh;
     overflow-x: hidden;
@@ -599,7 +605,7 @@ button:focus {
 .nav-top-section {
     transition: all 0.3s;
     margin-left: 260px;
-    padding: 78px 13px 13px 13px;
+    padding: 130px 13px 13px 13px;
 }
 
 .brand-logo-top {
@@ -668,17 +674,142 @@ button:focus {
 
 .header-div-tops {
     position: fixed;
-    top: 0;
+    top: 25px;
     left: 0;
-    right: 0;
-    width: calc(100% - 250px);
+    right: 25px;
+    width: calc(100% - 310px);
     margin-left: auto;
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: var(--color-white);
+    background-color: #FFFFFF;
     z-index: 9;
+    height: 80px;
+    border-radius: 12px;
 }
+
+.header-titles-cust span{
+    background-color: #F0643B;
+    border-radius: 8px;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+}
+
+.header-titles-cust h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.src-hdr-tops{
+    min-width: 500px;
+}
+
+.src-hdr-tops img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 12px;
+}
+
+.src-hdr-tops .form-style-input{
+    height: 40px;
+    padding-left: 40px;
+    background-color: #F4F4F4;
+}
+
+.header-profile-cust .btn,
+.header-profile-cust .btn:focus{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-profile-cust img{
+    border-radius: 8px;
+    height: 40px;
+    min-width: 40px;
+}
+
+.header-profile-cust .dropdown-toggle::after{
+    border: 0;
+    background-image: url('./Components/Images/arrow-updown-ico.svg');
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.header-profile-cust .btn[aria-expanded="true"].dropdown-toggle::after{
+    transform: rotate(180deg);
+}
+
+.header-profile-cust .dropdown-menu{
+    padding: 0;
+    border: 1px solid #57575733;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header-profile-cust .dropdown-menu .dropdown-item{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.ftrs-section{
+    background-color: #FFFFFF;
+    padding: 15px;
+    width: calc(100% - 310px);
+    margin-left: 285px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.ftrs-section p{
+    color: #575757;
+    font-size: 15px;
+}
+
+.ftrs-section a{
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 30px;
+    transition: all 0.3s;
+}
+
+.ftrs-section a:hover{
+    color: #F0643B;
+}
+
+.blog-section-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.blog-section-info p{
+    color: #575757;
+    margin: 24px 0 40px 0;
+    font-weight: 500;
+    font-size: 17px;
+}
+
 
 
 /* ====================================================================================== */
