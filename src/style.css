@@ -810,7 +810,22 @@ button:focus {
     font-size: 17px;
 }
 
+.root-add-class .overlay-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    background-color: #00000080;
+}
 
+.header-titles-cust span img{
+    object-fit: contain;
+    width: 18px;
+    height: 18px;
+}
+   
 
 /* ====================================================================================== */
 
@@ -842,6 +857,10 @@ button:focus {
     .ftrs-top-divs{
         padding: 0 12px;
     }
+
+    .root-add-class .sidebar-left-div{
+        transform: none;
+    }
 }
 
 @media (max-width: 991px) {
@@ -861,11 +880,11 @@ button:focus {
     }
 
     .header-titles-cust span{
-        margin-right: 12px;
+        margin-right: 8px;
     }
 
     .header-titles-cust h1{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sign-form-cust{

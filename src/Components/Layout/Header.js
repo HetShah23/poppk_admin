@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import SeacrhIco from "../../Components/Images/search-ico.svg";
 import { Dropdown } from "react-bootstrap";
 import ProfileIco from "../../Components/Images/profile-image.png";
-// import ToggleOpenIco from "../../Components/Images/toggle-icon.svg";
+import ToggleOpenIco from "../../Components/Images/toggle-off.svg";
+import test from "../../Components/Images/toggle-off.svg";
 
 export default function Header(props) {
 
@@ -12,11 +13,13 @@ export default function Header(props) {
 
     return (
         <header className="header-div-tops">
-            <div className="d-lg-none" onClick={addactiveclass}>
-                {/* <img src={ToggleOpenIco} loading="lazy" alt="toggle" /> */}
+            <div className="d-xl-none me-2" onClick={addactiveclass}>
+                <img src={ToggleOpenIco} loading="lazy" alt="toggle" />
             </div>
             <div className="d-inline-flex align-items-center header-titles-cust">
-                <span></span>
+                <span>
+                    <img src={test} loading="lazy" alt="" />
+                </span>
                 <h1>Blogs</h1>
             </div>
             <div className="ms-auto d-flex align-items-center justify-content-end">
