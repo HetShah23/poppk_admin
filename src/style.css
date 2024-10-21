@@ -814,6 +814,36 @@ button:focus {
 
 /* ====================================================================================== */
 
+@media (max-width: 1199px) {
+    .sidebar-left-div{
+        transform: translateX(-260px);
+    }
+
+    .nav-top-section{
+        margin-left: 0;
+        padding: 115px 0 12px 0px;
+    }
+
+    .header-div-tops{
+        width: calc(100% - 25px);
+        top: 16px;
+        right: 12px;
+    }
+
+    .src-hdr-tops {
+        min-width: 300px;
+    }
+
+    .ftrs-section{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ftrs-top-divs{
+        padding: 0 12px;
+    }
+}
+
 @media (max-width: 991px) {
     ::-webkit-scrollbar {
         width: 0;
@@ -829,11 +859,13 @@ button:focus {
         font-size: 13px;
         padding: 10px;
     }
-}
 
-@media (max-width: 767px) {
-    .main-section-box-ctr {
-        width: 100%;
+    .header-titles-cust span{
+        margin-right: 12px;
+    }
+
+    .header-titles-cust h1{
+        font-size: 20px;
     }
 
     .sign-form-cust{
@@ -856,5 +888,64 @@ button:focus {
     .logo-top-ctr img{
         max-width: 250px;   
         object-fit: contain;
+    }
+
+    .bdr-dash-box img{
+            width: 45px;
+    min-width: 45px;
+    height: 45px;
+    margin-right: 12px;
+    }
+
+    .bdr-dash-box span{
+        font-size: 15px;
+    }
+
+    .bdr-dash-box bdi{
+        font-size: 21px;
+    }
+
+    .bx-white-main h2{
+        font-size: 17px;
+    }
+
+    .btn-all-comn,
+    .btn-all-comn:hover{
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .btm-tbl-text span,
+    .btm-tbl-text .form-style-input,
+    .pagination-style-tbl button{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-section-box-ctr {
+        width: 100%;
+    }
+
+    .header-profile-cust .btn div,
+    .header-profile-cust .btn:focus div{
+        display: none;
+    }
+
+    .src-hdr-tops {
+        min-width: auto;
+        margin-left: 10px;
+    }
+
+    .header-profile-cust img {
+        height: 30px;
+        min-width: 30px;
+    }
+
+    .ftrs-section a {
+        margin: 5px 15px 0 15px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
     }
 }

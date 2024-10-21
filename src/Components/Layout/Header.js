@@ -24,11 +24,11 @@ export default function Header(props) {
                     <img src={SeacrhIco} loading="lazy" alt="" />
                     <input type="search" className="form-control form-style-input" placeholder="Search..." />
                 </div>
-                <div className="header-profile-cust ms-4">
+                <div className="header-profile-cust ms-md-4 ms-3">
                     <Dropdown>
                         <Dropdown.Toggle variant="success">
-                            <img src={ProfileIco} className="me-2 pe-1" loading="lazy" alt="" />
-                            John Doe
+                            <img src={ProfileIco} className="me-md-2 pe-md-1" loading="lazy" alt="" />
+                            <div>John Doe</div>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             <Dropdown.Item>Logout</Dropdown.Item>
